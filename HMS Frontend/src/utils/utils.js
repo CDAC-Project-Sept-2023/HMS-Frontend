@@ -5,6 +5,7 @@ import { constants } from './constants'
 // const registerUrl = 'http://localhost:3000' + '/user/register'
 // const registerUrl = 'http://localhost:3000/user/register'
 export function createUrl(path) {
+  console.log(path);
   return constants.serverUrl + path
 }
 

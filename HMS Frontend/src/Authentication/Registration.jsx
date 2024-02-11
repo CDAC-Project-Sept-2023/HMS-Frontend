@@ -8,7 +8,7 @@ function RegisterUser() {
   const [age, setAge] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
-  const [conatct, setContact] = useState("");
+  const [contactNo, setContactNo] = useState("");
   const [password, setPassword] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
   const [role, setRole] = useState("Patient");
@@ -24,7 +24,7 @@ function RegisterUser() {
       toast.error("Invalid email format");
     } else if (email.length == "") {
       toast.error("Please enter email");
-    } else if (conatct.length == "") {
+    } else if (contactNo.length == "") {
       toast.error("Please enter mobile");
     } else if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[#@$*]).{5,20}$/)) {
       toast.error("Invalid password format");
@@ -41,13 +41,13 @@ function RegisterUser() {
         name,
         email,
         password,
-        conatct,
+        contactNo,
         age,
         bloodGroup,
         address,
         role
       );
-
+        console.log(response);
       // parse the response
       if (response && response.email === "") {
         toast.info("Registration with this email is already done.");
@@ -109,7 +109,8 @@ function RegisterUser() {
                 type="tel"
                 className="form-control"
                 onChange={(e) => {
-                  setContact(e.target.value);
+                  setContactNo(e.target.value);
+                  console.log(e.target.value)
                 }}
               />
             </div>

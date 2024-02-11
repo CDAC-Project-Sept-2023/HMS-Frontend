@@ -2,10 +2,10 @@ import axios from 'axios';
 import { createUrl, log } from '../utils/utils';
 
 export async function registerUser(
-  pname,
+  name,
   email,
   password,
-  conatct,
+  contactNo,
   age,
   bloodGroup,
   address,
@@ -13,10 +13,10 @@ export async function registerUser(
 ) {
   const url = createUrl('/patient/register');
   const body = {
-    pname,
+    name,
     email,
     password,
-    conatct,
+    contactNo,
     age,
     bloodGroup,
     address,
@@ -24,27 +24,29 @@ export async function registerUser(
   };
 
   try {
-    // Check if the user already exists by email
+   // Check if the user already exists by email
     // try {
-    //   // const getUserResponse = await axios.get(url);
-    //   // if (getUserResponse.data && getUserResponse.data.email === email) {
-    //   //   console.log(getUserResponse.data);
-    //   //   return { email: '' }; // Return an empty object to indicate existing email
-    //   // }
+    //   const getUserResponse = await axios.get(url);
+    //   debugger;
+    //   if (getUserResponse.data && getUserResponse.data.email === email) {
+    //     console.log(getUserResponse.data);
+    //     return { email: '' }; // Return an empty object to indicate existing email
+    //   }
     //   if(getUserResponse.data && getUserResponse.data.role === 'Patient'){
     //     return {userRoles : 'Patient'}
     //   }
-    //   else if (getUserResponse.data && getUserResponse.data.userRoles === 'ADMIN'){
-    //     return {userRoles : 'ADMIN'}
+    //   else if (getUserResponse.data && getUserResponse.data.userRoles === 'Admin'){
+    //     return {userRoles : 'Admin'}
     //   }
-    //   else if (getUserResponse.data && getUserResponse.data.userRoles === 'SALESPERSON'){
-    //     return {userRoles : 'SALESPERSON'}
+    //   else if (getUserResponse.data && getUserResponse.data.userRoles === 'Doctor'){
+    //     return {userRoles : 'Doctor'}
     //   }
     // } catch (getUserEx) {
-    //   log('Error fetching user data by email:', getUserEx);
+    //    log('Error fetching user data by email:', getUserEx);
     // }
 
     // Proceed with registration if the email is not found in the database
+    debugger;
     const response = await axios.post(url, body);
     log(response.data);
     return response.data;
