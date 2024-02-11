@@ -78,6 +78,35 @@ export async function loginUser(email, password) {
     sessionStorage.setItem("userRoles", userRoles);
     sessionStorage.setItem("userId", userId);
     sessionStorage.setItem("isLoggedIn", isLoggedIn);
+    console.log(sessionStorage.getItem(userId));
+    return response.data
+  } catch (ex) {
+    log(ex)
+    return null
+  }
+}
+
+export async function getPatientById(patientId){
+
+  const url = createUrl(`/patient/${patientId}`)
+debugger;
+  // const body = {
+  //   patientId
+  // }
+  // wait till axios is making the api call and getting response from server
+  try {
+    const response = await axios.get(url)
+    log(response.data)
+    debugger; 
+    // const token = response.data.jwt;
+    // const userRoles = response.data.role;
+    // const userId = response.data.id;
+    // const isLoggedIn = true;//response.data.isLoggedIn;
+
+    // sessionStorage.setItem("token" , token);
+    // sessionStorage.setItem("userRoles", userRoles);
+    // sessionStorage.setItem("userId", userId);
+    // sessionStorage.setItem("isLoggedIn", isLoggedIn);
     return response.data
   } catch (ex) {
     log(ex)

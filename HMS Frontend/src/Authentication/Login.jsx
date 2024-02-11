@@ -22,18 +22,19 @@ function LoginUser() {
           
           // Check if userRoles exist in the response and handle navigation based on roles
           if (response.role === 'Patient') {
-            navigate('/salesperson'); // Navigate to home page for users
+            navigate('/PatientServices'); // Navigate to home page for users
            // window.location.reload();
-            toast.success('USER login Successful')
+            toast.success('patient login Successful')
           } else if (response.userRoles === 'ADMIN') {
             navigate('/admin'); // Navigate to admin page for admins
             //window.location.reload();
-            toast.success('Welcome Admin .. Sab Tumhara Hai...')
-          } else if (response.userRoles === 'SALESPERSON') {
-            navigate('/salesperson');
-            toast.success('Salesperson Login Successfull') 
+            toast.success('Welcome Admin .. Sab Tumhara Hai...you are admin')
+          }    else if (response.userRoles === 'Doctor') {
+            navigate('/doctor');
+            toast.success('Doctor Login Successfull') 
            // window.location.reload();
-          } else {
+          }
+           else {
             toast.error('Invalid role');
           }
         } else {

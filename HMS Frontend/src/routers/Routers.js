@@ -7,23 +7,25 @@ import CarDetails from "../components/UI/CarDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import FinancePage from "../pages/Finance";
-import Services from "../pages/Services";
+import PatientServices from "../pages/PatientServices";
 import TestDrivePage from "../pages/TestDrive";
 import Login from "../Authentication/Login";
 import RegisterUser from "../Authentication/Registration";
 import BookService from "../components/UI/BookService";
+import PatientProfile from "../components/UI/PatientProfile";
 
 //Import a toastify to use 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Admin from "../pages/Admin";
-import Salesperson from "../pages/Salesperson";
+import Patient from "../pages/Patient";
 import AddCar from "../pages/AddCar";
 import BookingPage from "../components/UI/BookingPage";
 
 const Routers = () => {
   return (
     <div>
+  
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
@@ -31,7 +33,8 @@ const Routers = () => {
       <Route path="/cars" element={<CarListing />} />
       <Route path="/carDetails/:id" element={<CarDetails />} />
       <Route path="/finance" element={<FinancePage />}/>
-      <Route path="/services" element={< Services/>}/>   
+      <Route path="/PatientServices" element={< PatientServices/>}/> 
+        
       <Route path="/test_drive" element={<TestDrivePage/>}/>
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
@@ -40,11 +43,11 @@ const Routers = () => {
       <Route path="/booking/:id" element={<BookingPage />} />
       <Route path="/book_service/:id/:name" element={<BookService />} />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/salesperson" element={<Salesperson />} />
+      <Route path="/patient" element={<Patient />} />
       <Route path="/addcar" element={<AddCar />} />
+      <Route path="/patient_profile/:id/:name" element={<PatientProfile/>} />
 
     </Routes>
-
     <ToastContainer/>
     </div>
   );
