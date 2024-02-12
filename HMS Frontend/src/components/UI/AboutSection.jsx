@@ -18,37 +18,32 @@ const AboutSection = ({ aboutClass }) => {
           <Col lg="6" md="6">
             <div className="about__section-content">
               <h4 className="section__subtitle">About Us</h4>
-              <h2 className="section__title">Welcome to our Showroom</h2>
+              <h2 className="section__title">Welcome to Sunbeam</h2>
               <p className="section__description">
-              Welcome to VMS, where automotive excellence meets personalized service. 
-              With a diverse selection of hand-picked vehicles, we strive to provide a seamless and enjoyable car-buying experience. 
-              Our knowledgeable team is dedicated to understanding your needs and helping you find the perfect vehicle that fits your lifestyle and aspirations. 
-              We ensure that every vehicle in our showroom meets the highest standards of quality and performance. 
-              Experience our commitment to exceptional customer service as we guide you through the entire process, offering tailored solutions and financing options to make your dream car a reality. 
-              Discover automotive excellence at VMS.
+                Serving the healthcare needs of people in the Pune District of
+                Maharashtra State in India since 1912, KEM Hospital, Pune, has
+                grown to be one of the largest private hospitals in the region.
+                KEM Hospital is run by the KEM Hospital Society, a registered
+                charitable trust. What began with 4 maternity beds.
               </p>
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> World Class Cars
-                  
+                  <i class="ri-checkbox-circle-line"></i> World Class Services
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
                   <i class="ri-checkbox-circle-line"></i> Customer Satisfaction
-                  
                 </p>
               </div>
-              
+
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
                   <i class="ri-checkbox-circle-line"></i> Standard Sevices
-                  
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
                   <i class="ri-checkbox-circle-line"></i> Affordable
-                  
                 </p>
               </div>
             </div>

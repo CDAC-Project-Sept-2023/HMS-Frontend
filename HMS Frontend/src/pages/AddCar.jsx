@@ -92,10 +92,8 @@ const Admin = () => {
 
 
         <div className="container mt-5">
-            <i><h1 className="text-center mb-4">Admin Dashboard</h1></i>
-
-
-
+            <b><h1 className="text-center mb-5">Book an appointment</h1></b>
+            
             <form onSubmit={addNewCar} className="add-car-form">
                 <div className="form-section">
                     <div className="form-group">

@@ -22,7 +22,7 @@
 
 .header__top__help i {
   background: #fff;
-  color: #000d6b;
+  color: #1378bd;
   padding: 2px 4px;
   border-radius: 50px;
   font-size: 0.7rem;
@@ -78,11 +78,11 @@
 }
 
 .header__btn {
-  background: #000d6b !important;
-  padding: 10px 20px;
+  background: #1d30c2 !important;
+  padding: 50px 200px;
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .header__btn a {
@@ -90,7 +90,7 @@
   align-items: center;
   column-gap: 0.4rem;
   text-decoration: none;
-  color: #fff;
+  color: #f5f3f3;
   justify-content: end;
   font-size: 0.9rem;
 }
@@ -195,7 +195,7 @@
   }
 
   .menu a {
-    color: #000d6b;
+    color: #1378bd;
     font-weight: 600;
     font-size: 0.9rem;
   }

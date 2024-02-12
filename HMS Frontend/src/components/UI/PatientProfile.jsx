@@ -13,7 +13,8 @@ const ServiceBook = () => {
 
   const getPatient = async () => {
     try {
-      const response = await getPatientById(id);
+      const patientId= sessionStorage.getItem("userId");
+      const response = await getPatientById(patientId);
       console.log(response);
       setPatient(response);
     } catch (error) {

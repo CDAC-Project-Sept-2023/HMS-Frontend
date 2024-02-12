@@ -9,10 +9,10 @@ import engineTuneUpImage from '../assets/all-images/service-img/engineTuneUpImag
 const ServicesPage = () => {
 
   const services = [
-    { id: 1, name: 'My Profile', option:'Show Profile'},
-    { id: 2, name: 'Book Appointment',option:'Book Appointment' },
-    { id: 3, name: 'Our Doctors',option:'Show Doctors'},
-    { id: 4, name: 'Your Appointments',option:'Show Appointment'},
+    { id: 1, name: 'My Profile', option:'Show Profile',path:'/patient_profile/${service.id}/${service.name}'},
+    { id: 2, name: 'Book Appointment',option:'Book Appointment',path:'/docs'},
+    { id: 3, name: 'Our Doctors',option:'Show Doctors',path:'/patient_profile/${service.id}/${service.name}'},
+    { id: 4, name: 'Your Appointments',option:'Show Appointment',path:'/cars'},
     // Add more services as needed
   ];
   console.log(sessionStorage.getItem("userId"));
@@ -41,7 +41,7 @@ const ServicesPage = () => {
               <img src={serviceImages[service.id]} alt={`${service.name} Image`} className="service-image" />
             </div>
             <Link
-              to={`/patient_profile/${service.id}/${service.name}`}
+              to={`${service.path}`}
               className="btn btn-primary"
             >
               {service.option}

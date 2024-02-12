@@ -2,10 +2,57 @@ import React from "react";
 import { Col } from "reactstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/car-item.css";
-import { createUrl } from '../../utils/utils';
+import { createUrl } from "../../utils/utils";
 
+const CarItem = ({ doctors }) => {
+  // const {  id,  dcontactNo, dname, dspecialisation, day, time } = props.item;
+  //  const imageUrl = createUrl(`/cars/images/${id}`);
+  const navigate = useNavigate();
 
-const CarItem = (props) => {
+  //You Have To get the insurance First
+  // const BookNow = () => {
+  //   // navigate("/cars/bookingForm");
+  //   navigate(`/booking/${id}`, { state: { car: props.item } });
+  // }
+
+  // const carDetails = () => {
+  //   navigate(`/carDetails/${id}`);
+  //   console.log(id);
+  //   debugger;
+  // };
+
+  return (
+    <div className="table-responsive">
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Contact Number</th>
+            <th>Specialization</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          {doctors.map((doctor) => (
+            <tr key={doctor.id}>
+              <td>{doctor.id}</td>
+              <td>{doctor.dname}</td>
+              <td>{doctor.dcontactNo}</td>
+              <td>{doctor.dspecialisation}</td>
+              <td>{doctor.day}</td>
+              <td>{doctor.time}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default CarItem;
+/*const CarItem = (props) => {
   const {  id,  modelName, brandName, automatic, speed, price } = props.item;
   const imageUrl = createUrl(`/cars/images/${id}`);
   
@@ -63,5 +110,4 @@ const CarItem = (props) => {
     </Col>
   );
 };
-
-export default CarItem;
+*/

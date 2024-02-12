@@ -21,6 +21,7 @@ import Admin from "../pages/Admin";
 import Patient from "../pages/Patient";
 import AddCar from "../pages/AddCar";
 import BookingPage from "../components/UI/BookingPage";
+import DoctorListing from "../pages/DoctorList";
 
 const Routers = () => {
   return (
@@ -31,6 +32,7 @@ const Routers = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/cars" element={<CarListing />} />
+      <Route path="/docs" element={<DoctorListing />} />
       <Route path="/carDetails/:id" element={<CarDetails />} />
       <Route path="/finance" element={<FinancePage />}/>
       <Route path="/PatientServices" element={< PatientServices/>}/> 

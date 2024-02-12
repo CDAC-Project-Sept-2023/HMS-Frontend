@@ -12,7 +12,7 @@ const navLinks = [
 
   {
     path: "/cars",
-    display: "Cars",
+    display: "Appointments",
   },
 
   {
@@ -23,7 +23,7 @@ const navLinks = [
 
   {
     path: "/finance",
-    display: "Finance",
+    display: "BMI",
   },
 
   {
@@ -78,7 +78,7 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +917057816893
+                  <i class="ri-phone-fill"></i> +918484807827
                 </span>
               </div>
             </Col>
@@ -118,9 +118,9 @@ const Header = () => {
               <div className="logo">
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
-                    <i class="ri-car-line"></i>
+                    <i class="10k-outline"></i>
                     <span>
-                      VMS <br />
+                      Sunbeam Hospital<br />
                     </span>
                   </Link>
                 </h1>
@@ -159,7 +159,7 @@ const Header = () => {
             >
               <button className="header__btn btn ">
                 <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
+                  <i class="ri-phone-line"></i> Book Appointment
                 </Link>
               </button>
             </Col>
