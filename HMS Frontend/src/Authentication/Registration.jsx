@@ -11,7 +11,7 @@ function RegisterUser() {
   const [contactNo, setContactNo] = useState("");
   const [password, setPassword] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
-  const [role, setRole] = useState("Patient");
+  const [role, setRole] = useState("ROLE_PATIENT");
 
   const navigate = useNavigate();
 
@@ -147,17 +147,7 @@ function RegisterUser() {
               />
             </div>
 
-            <div className="mb-3">
-              <label htmlFor="">Role</label>
-              <input
-                type="text"
-                className="form-control"
-                onChange={(e) => {
-                  setRole(e.target.value);
-                }}
-              />
-            </div>
-
+           
             {/* <div className='mb-3'>
               <label htmlFor=''>Confirm Password</label>
               <input

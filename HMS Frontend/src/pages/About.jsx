@@ -5,7 +5,7 @@ import Helmet from "../components/Helmet/Helmet";
 import AboutSection from "../components/UI/AboutSection";
 import { Container, Row, Col } from "reactstrap";
 
-import driveImg from "../assets/all-images/drive.jpg";
+import aboutimg1 from "../assets/all-images/abot1.jpg";
 import OurMembers from "../components/UI/OurMembers";
 import "../styles/about.css";
 
@@ -20,46 +20,50 @@ const About = () => {
           <Row>
             <Col lg="6" md="6" sm="12">
               <div className="about__page-img">
-                <img src={driveImg} alt="" className="w-100 rounded-3" />
+                <img src={aboutimg1} alt="" className="w-100 rounded-3" />
               </div>
             </Col>
 
             <Col lg="6" md="6" sm="12">
               <div className="about__page-content">
                 <h2 className="section__title">
-                  We Are Committed To Provide Safe Ride Solutions
+                  Providing Compassionate and Quality Healthcare Solutions
                 </h2>
 
                 <p className="section__description">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Eveniet veniam assumenda aperiam accusantium ex autem
                   perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
                 </p>
 
                 <p className="section__description">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Eveniet veniam assumenda aperiam accusantium ex autem
                   perferendis repellendus nostrum delectus. Nemo et dolore est
+                  perferendis repellendus nostrum delectus. Nemo et dolore est
                   tempore rem minima adipisci magni dolorum ipsam.
                 </p>
-
+                <p className="section__description">
+                  We are a team of dedicated professionals committed to
+                  delivering exceptional care to our patients. We utilize
+                  state-of-the-art technology and evidence-based practices to
+                  ensure optimal outcomes.
+                </p>
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
                     <i class="ri-phone-line"></i>
                   </span>
-
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+91-7057816893</h4>
+                    <h4>+91-70256325</h4>
                   </div>
+                  {" "}
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-
       <section>
         <Container>
           <Row>
@@ -74,5 +78,4 @@ const About = () => {
     </Helmet>
   );
 };
-
 export default About;

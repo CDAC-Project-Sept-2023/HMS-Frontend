@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
-import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
+import aboutImg from "../../assets/all-images/doctor.jpg";
 
 const AboutSection = ({ aboutClass }) => {
   return (
@@ -18,7 +18,7 @@ const AboutSection = ({ aboutClass }) => {
           <Col lg="6" md="6">
             <div className="about__section-content">
               <h4 className="section__subtitle">About Us</h4>
-              <h2 className="section__title">Welcome to Sunbeam</h2>
+              <h1 className="section__title">Welcome to Sunbeam Care</h1>
               <p className="section__description">
                 Serving the healthcare needs of people in the Pune District of
                 Maharashtra State in India since 1912, KEM Hospital, Pune, has

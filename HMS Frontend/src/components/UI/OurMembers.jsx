@@ -9,7 +9,7 @@ import ava04 from "../../assets/all-images/ava-4.jpg";
 
 const OUR__MEMBERS = [
   {
-    name: "Sanket Patil",
+    name: "Mayur Gadekar",
     experience: "1 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -19,7 +19,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Eshwar Lidhure",
+    name: "Renu Gunnapure",
     experience: "1 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -29,7 +29,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Suyog Fegade",
+    name: "Omkar Ghadge",
     experience: "1 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -39,7 +39,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Vaibhav Talele",
+    name: "Harshita Jain",
     experience: "1 years of experience",
     fbUrl: "#",
     instUrl: "#",

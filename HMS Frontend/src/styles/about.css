@@ -9,3 +9,6 @@
     display: none;
   }
 }
+.about__section-content h2 {
+  font-size: 2rem; /* Adjusted font size */
+}

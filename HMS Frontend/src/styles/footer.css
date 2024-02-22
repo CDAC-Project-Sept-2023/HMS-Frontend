@@ -1,3 +1,18 @@
+
+.footer {
+  background: #034a8c;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.715);
+}
+
+.footer a:hover {
+  color: #f9a826;
+}
+
 .footer {
   background: #034a8c;
   padding-top: 50px;

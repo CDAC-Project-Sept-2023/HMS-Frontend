@@ -16,10 +16,10 @@ const quickLinks = [
   },
 
   {
-    path: "/cars",
-    display: "Car Listing",
+    path: "/home",
+    display: "Home",
   },
-  
+
   {
     path: "/contact",
     display: "Contact",
@@ -37,18 +37,22 @@ const Footer = () => {
             <div className="logo footer__logo">
               <h1>
                 <Link to="/home" className=" d-flex align-items-center gap-2">
-                  <i class="ri-car-line"></i>
-                  <span>
-                    Book Car
-                  </span>
+                  <i class="ri-hospital-line"></i>
+                  <span>Sunbeam Care </span>
                 </Link>
               </h1>
             </div>
-            <p className="foRent Car <br /> Serviceoter__logo-content" style={{color : "white"}}>
-              Welcome to VMS, where automotive excellence meets personalized service. 
-              With a diverse selection of hand-picked vehicles, we strive to provide a seamless and enjoyable car-buying experience. 
-              Our knowledgeable team is dedicated to understanding your needs and helping you find the perfect vehicle that fits your lifestyle and aspirations. 
-              We ensure that every vehicle in our showroom meets the highest standards of quality and performance. 
+            <p
+              className="foRent Car <br /> Serviceoter__logo-content"
+              style={{ color: "white" }}
+            >
+              Serving the healthcare needs of people in the Pune District of
+              Maharashtra State in India since 1912, KEM Hospital, Pune, has
+              grown to be one of the largest private hospitals in the region.
+              KEM Hospital is run by the KEM Hospital Society, a registered
+              charitable trust. What began with 4 maternity beds. KEM Hospital
+              is run by the KEM Hospital Society, a registered charitable trust.
+              What began with 4 maternity beds.{" "}
             </p>
           </Col>
 
@@ -67,13 +71,15 @@ const Footer = () => {
 
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title mb-4">Head Office</h5>
-              <p className="office__info">123 Hinjewadi, Phase 1, Pune, India</p>
-              <p className="office__info">Phone: +91-7057816893</p>
+              <h5 className="footer__link-title mb-4">Hopsital Address</h5>
+              <p className="office__info">
+                123 Hinjewadi, Phase 1, Pune, India
+              </p>
+              <p className="office__info">Phone: +91-8484807827</p>
 
-              <p className="office__info">Email: vaibhavkt2@gmail.com</p>
+              <p className="office__info">Email: engrmayur@gmail.com</p>
 
-              <p className="office__info">Office Time: 10am - 7pm</p>
+              <p className="office__info">Visit Time: 24 x 7 </p>
             </div>
           </Col>
 
@@ -94,7 +100,7 @@ const Footer = () => {
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
                 <i class="ri-copyright-line"></i>Copyright {year}, Developed by
-                 Pandvas... All rights reserved.
+                Pandvas... All rights reserved.
               </p>
             </div>
           </Col>

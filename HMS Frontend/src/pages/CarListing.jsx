@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import CarItem from "../components/UI/CarItem";
+import CarItem from "../components/UI/DoctorItem";
 //import doctorlist from "../pages/DoctorList"
 import axios from "axios";
 import { createUrl, log } from '../utils/utils';
