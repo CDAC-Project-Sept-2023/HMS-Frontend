@@ -1,44 +1,6 @@
-// import React from "react";
-// import { Col } from "reactstrap";
-// import { Link, useNavigate } from "react-router-dom";
-// import "../../styles/car-item.css";
-// import { createUrl } from "../../utils/utils";
-// import { Button } from "reactstrap";
 
 
-
-//   return (
-//     <tr>
-//       <td>{doctor.name}</td>
-    
-//       <td>{doctor.contactNo}</td>
-//       <td>{doctor.specialisation}</td>
-//       <td>
-//         <ul>
-//           {doctor.schedule.map((schedule, index) => (
-//             <li key={index}>{schedule.day}</li>
-//           ))}
-//         </ul>
-//       </td>
-//       <td>
-//         <ul>
-//           {doctor.schedule.map((schedule, index) => (
-//             <li key={index}>{schedule.time}</li>
-//           ))}
-//         </ul>
-//       </td>
-      // <td>
-      //   <Button color="danger" onClick={handleDelete}>
-      //     Delete
-      //   </Button>
-      // </td>
-//     </tr>
-//   );
-// };
-// export default DoctorItem;
-
-
-////
+//working code below
 
 import React from "react";
 import { Col } from "reactstrap";
@@ -90,6 +52,27 @@ const DoctorItem = ({ doctor,onDelete }) => {
   );
 };
 export default DoctorItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*const CarItem = (props) => {
   const {  id,  modelName, brandName, automatic, speed, price } = props.item;
   const imageUrl = createUrl(`/cars/images/${id}`);

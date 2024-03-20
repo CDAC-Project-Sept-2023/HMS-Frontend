@@ -22,7 +22,6 @@ const DoctorListing = () => {
     relation: "",
   });
 
-  const patientId = sessionStorage.getItem("userId");
 
   useEffect(() => {
     loadDoctors();
@@ -66,7 +65,7 @@ const DoctorListing = () => {
     };
     debugger;
     try {
-      const response = await axios.post(url, Body,{
+      const response = await axios.post(url, Body, {
         headers: {
           Authorization: getAuthorizationHeader(),
         },
@@ -79,6 +78,11 @@ const DoctorListing = () => {
       console.error("Error booking appointment:", error);
     }
   };
+
+  // const handleDoctorSelect = (doctorId, day) => {
+  //   debugger;
+  //   setSelectedDoctor({ id: doctorId, day: day });
+  // };
 
   const getMinDate = () => {
     const today = new Date();
@@ -225,7 +229,7 @@ const DoctorListing = () => {
                     </tr> */}
 
                     <td>
-                      <strong>Appointment Date:</strong>  
+                      <strong>Appointment Date:</strong>
                     </td>
                     <td>
                       <input
@@ -266,8 +270,23 @@ const DoctorListing = () => {
                                 {doc.name}
                               </option>
                             ))}
-                          </select>
+                          </select>{" "}
                         </td>
+
+                        {/* <td>
+                          <select
+                            onChange={(e) =>
+                              handleDoctorSelect(doctor.id, e.target.value)
+                            }
+                          >
+                            <option value="">Select a day</option>
+                            {doctor.schedule.map((schedule, index) => (
+                              <option key={index} value={schedule.day}>
+                                {schedule.day}
+                              </option>
+                            ))}
+                          </select>
+                        </td> */}
                       </tr>
                     ) : (
                       <tr>
