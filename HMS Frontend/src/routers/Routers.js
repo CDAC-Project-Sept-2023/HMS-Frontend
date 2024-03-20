@@ -20,7 +20,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Admin from "../pages/Admin";
 import Patient from "../pages/Patient";
-import AddCar from "../pages/AddCar";
+
 import BookingPage from "../components/UI/BookingPage";
 import DoctorListing from "../pages/DoctorList";
 
@@ -66,7 +66,7 @@ const Routers = () => {
         <Route path="/book_service/:id/:name" element={<BookService />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/patient" element={<Patient />} />
-        <Route path="/addcar" element={<AddCar />} />
+
         <Route path="/patient_profile/:id/:name" element={<PatientProfile />} />
         <Route path="/appointment" element={<Appointment />} />
 
